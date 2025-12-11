@@ -44,7 +44,7 @@ pipeline {
 
     environment {
         // Keeps your image name consistent across all stages
-        DOCKER_IMAGE = 'epiking4/Jenkins2'
+        DOCKER_IMAGE = 'epiking4/jenkins2'
         DOCKER_CREDENTIALS_ID = 'docker-hub-credentials'
     }
 
