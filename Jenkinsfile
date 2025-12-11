@@ -2,7 +2,7 @@
 //     agent any
 
 //     environment {
-//         DOCKER_IMAGE = 'epiking4/Jenkins2'
+//         DOCKER_IMAGE = 'epiking4/jenkins2'
 //         DOCKER_CREDENTIALS_ID = 'docker-hub-credentials'
 //     }
 
