@@ -106,9 +106,9 @@ pipeline {
                 // FIXED: Used %DOCKER_IMAGE% variable instead of "username/..."
                 // Added logic to stop the container only if it is actually running to prevent errors
                 bat """
-                    docker stop my-web-app || echo "Container not running..."
-                    docker rm -f my-web-app || echo "No container to remove..."
-                    docker run -d --name my-web-app -p 8090:3000 ${DOCKER_IMAGE}:latest
+                    docker stop Jenkins2 || echo "Container not running..."
+                    docker rm -f Jenkins2 || echo "No container to remove..."
+                    docker run -d --name Jenkins2 -p 8090:3000 ${DOCKER_IMAGE}:latest
                 """
             }
         }
